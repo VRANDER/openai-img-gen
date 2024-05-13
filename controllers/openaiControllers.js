@@ -12,7 +12,7 @@ const generateImage = async (req, res) => {
         const response = await openai.createImage({
             prompt,
             n: 1,
-            size: "1024x1024",
+            size: "1024x1024"
           });
           
         res.status(200).json({
